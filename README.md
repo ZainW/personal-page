@@ -1,22 +1,7 @@
-# mypage
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7eecb2a9-cf12-45bb-8946-0a713d86ad84/deploy-status)](https://app.netlify.com/sites/agitated-mcclintock-4a5663/deploys)
+
+# My Personal Site with stuff about stuff
 
 > Nuxt Based Static personal site
 
-## Build Setup
-
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn run dev
-
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+Built with :heart: with Nuxt
