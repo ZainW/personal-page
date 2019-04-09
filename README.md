@@ -1,6 +1,6 @@
 # mypage
 
-> wonderful static site representing me
+> Nuxt Based Static personal site
 
 ## Build Setup
 
