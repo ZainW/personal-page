@@ -1,3 +1,6 @@
+import path from 'path'
+import PurgecssPlugin from 'purgecss-webpack-plugin'
+import glob from 'glob-all'
 import pkg from './package'
 
 export default {
@@ -34,6 +37,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/typer', ssr: false },
+    { src: '~/plugins/darkmode', ssr: false }
   ],
 
   /*
@@ -57,8 +62,23 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    extractCSS: true,
     extend(config, ctx) {
       // Run ESLint on save
+      if (!ctx.isDev) {
+        // Remove unused CSS using purgecss. See https://github.com/FullHuman/purgecss
+        // for more information about purgecss.
+        config.plugins.push(
+          new PurgecssPlugin({
+            paths: glob.sync([
+              path.join(__dirname, './pages/**/*.vue'),
+              path.join(__dirname, './layouts/**/*.vue'),
+              path.join(__dirname, './components/**/*.vue')
+            ]),
+            whitelist: ['html', 'body']
+          })
+        )
+      }
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
