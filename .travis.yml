@@ -15,4 +15,4 @@ cache:
 
 script:
   - yarn lint
-  - yarn test
+  - yarn test && yarn codecov
