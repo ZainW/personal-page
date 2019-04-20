@@ -10,7 +10,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "test": "jest"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
@@ -20,9 +21,14 @@
     "vuedarkmode": "^0.3.23"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.4.3",
     "@nuxtjs/eslint-config": "^0.0.1",
+    "@vue/test-utils": "^1.0.0-beta.29",
     "autoprefixer": "^8.6.4",
+    "babel-core": "npm:@babel/core",
     "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.7.1",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^5.15.1",
     "eslint-config-standard": ">=12.0.0",
     "eslint-loader": "^2.1.2",
@@ -34,10 +40,12 @@
     "eslint-plugin-standard": ">=4.0.0",
     "eslint-plugin-vue": "^5.2.2",
     "glob-all": "^3.1.0",
+    "jest": "^24.7.1",
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.9",
     "purgecss-webpack-plugin": "^1.4.0",
     "sass-loader": "^7.1.0",
-    "tailwindcss": "^0.7.0"
+    "tailwindcss": "^0.7.0",
+    "vue-jest": "^3.0.3"
   }
 }
