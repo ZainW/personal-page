@@ -16,4 +16,3 @@ cache:
 script:
   - yarn lint
   - yarn test
-  - codecov
