@@ -1,14 +1,20 @@
 <template>
-  <section class="container mx-auto flex justify-center mt-12">
-    <typer />
-  </section>
+  <div>
+    <section class="container mx-auto flex justify-center mt-12">
+      <typer />
+    </section>
+
+    <AudioStuff />
+  </div>
 </template>
 
 <script>
 import typer from '@/components/HomeTyper'
+import AudioStuff from '@/components/AudioStuff'
 export default {
   components: {
-    typer
+    typer,
+    AudioStuff
   }
 }
 </script>
@@ -21,4 +27,5 @@ html {
 .vue-typer .custom.char {
   color: #f8fafc;
 }
+
 </style>
