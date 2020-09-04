@@ -42,7 +42,7 @@
     "eslint-plugin-vue": "^5.2.2",
     "glob-all": "^3.1.0",
     "jest": "^24.7.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.18.9",
     "purgecss-webpack-plugin": "^1.4.0",
     "sass-loader": "^7.1.0",
